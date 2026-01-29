@@ -13,6 +13,11 @@ padding:20px 80px;align-items:center;
 html {
   scroll-behavior: smooth;
 }
+.container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 80px;
+}
 
 .navbar a {
   text-decoration: none;
@@ -38,9 +43,18 @@ html {
 
 /* HERO */
 .hero{
-min-height:90vh;display:flex;align-items:center;
-padding:0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0 60px; /* controlled top */
 }
+
+.hero .container{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .hero-left{width:55%;animation:slideL 1.2s ease}
 .hero-left h4{color:#ff4c4c;letter-spacing:2px}
 .hero-left h1{font-size:50px;margin:10px 0}
@@ -59,21 +73,35 @@ text-decoration:none;font-size:14px;
 .hero-right img{width:340px;border-radius:12px}
 
 /* SECTIONS */
-.section{padding:80px 80px}
+.section{
+  padding: 80px 0px;
+}
+
+
 .section h2{font-size:32px;margin-bottom:20px;color:#ff4c4c}
-.section p{max-width:850px;line-height:1.7;opacity:.85}
+.section p{
+  max-width: 900px;
+  line-height: 1.7;
+  opacity: .85;
+  margin-top: 10px;
+}
+
+
 
 .dark{background:#111827}
 
-.skills span {
-  display: inline-block;
-  background: #ff4c4c;
-  padding: 8px 16px;
-  margin: 8px;
-  border-radius: 20px;
-  font-size: 13px;
-  transition: 0.3s;
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
 }
+.skills span{
+  padding: 7px 14px;
+  font-size: 12px;
+}
+
 
 .skills span:hover {
   background: white;
